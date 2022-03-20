@@ -1,0 +1,29 @@
+.programm {
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, .8);
+
+    &__box {
+        margin: 0 auto;
+        padding: 30px 50px;
+        max-width: 450px;
+        min-height: 100px;
+        border: 2px solid $main-color;
+        border-radius: 12px;
+        background-color: rgb(221, 221, 221);
+        box-shadow: 0px 0px 14px rgba(0, 119, 255, .6);
+    }
+
+    &__item+&__item {
+        margin-top: 7px;
+    }
+
+    &__item {
+        font-size: 14px;
+        line-height: 18px;
+        color: #000;
+
+        span {
+            font-weight: 700;
+        }
+    }
+}

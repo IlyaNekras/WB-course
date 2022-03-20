@@ -1,0 +1,42 @@
+.contact {
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, .8);
+
+    &__text {
+        font-size: 40px;
+        color: #fff;
+        margin-bottom: 30px;
+        line-height: 40px;
+
+        span {
+            color: $main-color;
+        }
+    }
+
+    &__phone,
+    &__email {
+        font-size: 25px;
+        line-height: 20px;
+        margin-bottom: 15px;
+        color: #fff;
+    }
+
+    &__social {
+        &-item {
+            display: inline-block;
+            color: #fff;
+            text-align: center;
+
+            a {
+                width: 60px;
+                img{
+                    width: inherit;
+                }
+            }
+        }
+
+        &-item+.form__social-item {
+            margin-left: 30px;
+        }
+    }
+}

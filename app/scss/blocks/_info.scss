@@ -1,0 +1,66 @@
+.info {
+    padding: 50px 0;
+
+    &__box {
+        position: relative;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        height: 85px;
+        overflow: hidden;
+        padding:0 70px 30px 0;
+    }
+    &__box+&__box {
+        border-top: none;
+    }
+
+    &__box--active {
+        height: 100%;
+        .info__box-btn{
+            transform: rotate(45deg);
+        }
+    }
+
+    &__box-text {
+        cursor: pointer;
+        font-size: 28px;
+        font-weight: 700;
+        padding: 28px 0;
+
+        &:hover {
+            .info__box-btn {
+                background-color: rgba(0, 0, 0, .1);
+                transition: all 0.3s;
+            }
+        }
+    }
+
+    &__box-btn {
+        position: absolute;
+        top: 20px;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+
+        &::after,
+        &::before {
+            position: absolute;
+            content: '';
+            top: 48%;
+            left: 10px;
+            width: 29px;
+            height: 3px;
+            background-color: rgb(0, 0, 0);
+        }
+
+        &::before {
+            transform: rotate(90deg);
+        }
+
+    }
+
+    &__box-subtext {
+        font-size: 25px;
+        line-height: 30px;
+    }
+}

@@ -1,0 +1,46 @@
+.format {
+    padding-top: 50px;
+
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+    }
+
+    &__box {
+        background-color: rgba(100, 100, 100, 0.151);
+        position: relative;
+        width: 300px;
+        height: 120px;
+        padding: 25px;
+        border-radius: 18px;
+        border-left: 5px solid rgb(178 178 178 / 25%);
+        border-top: 5px solid rgb(178 178 178 / 25%);
+        margin: 0 20px 60px;
+    }
+
+    &__text {
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    &__subtext {
+        font-size: 15px;
+        line-height: 18px;
+        font-weight: 400;
+    }
+
+    &__img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -55px;
+        width: 70px;
+        img{
+            width: inherit;
+        }
+    }
+}
